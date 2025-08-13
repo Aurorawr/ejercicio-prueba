@@ -1,0 +1,213 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding-bottom: 10px;
+  border-bottom: 4px solid black;
+}
+
+h1 {
+  font-size: 32pt;
+  font-weight: normal;
+}
+
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex > * {
+  margin: 0 1rem;
+}
+
+#logo {
+  background-color: #00bcb3;
+  border-radius: 7px;
+}
+
+header > div:first-child {
+  margin-bottom: 1rem;
+}
+
+header > div:first-child > p {
+  font-size: 16pt;
+}
+
+header > div:first-child > h3 {
+  font-size: 26pt;
+  margin: 0;
+}
+
+.search-bar {
+  width: 99%;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 40px;
+  background-image: url("./img/search-dark.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 30px;
+  background-origin: content-box;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#shoping-cart {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.info {
+  background-color: #00bcb3;
+  color: white;
+  font-size: 28pt;
+  display: flex;
+}
+
+.arrow-text {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.arrow-text img {
+  height: 30px;
+}
+
+#succulent-info {
+  width: 100%;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 65% auto;
+  column-gap: 20px;
+}
+
+#panel1 {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+#panel1 .info {
+  flex-direction: column;
+  align-items: center;
+}
+
+#panel1 p {
+  padding: 0 3rem;
+  font-size: 28pt;
+}
+
+#panel2 {
+  display: grid;
+  grid-template-rows: 70% auto;
+  row-gap: 20px;
+}
+
+#panel2 .info {
+  display: flex;
+}
+
+#panel2 .arrow-text {
+  align-self: center;
+  margin-left: 2rem;
+}
+
+#panel2 p {
+  margin: 0;
+}
+
+#succulents-img {
+  background-image: url("./img/succulents-1.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#succulents-img:hover {
+  background-image: url("./img/succulents-2.jpg");
+}
+
+#succulent-img {
+  background-image: url("./img/aloe-m.jpg");
+  background-repeat: no-repeat;
+}
+
+#succulent-imgs {
+  width: 100%;
+  height: 30vh;
+  background-color: #adebe8;
+  margin-top: 20px;
+}
+
+.circle-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
+
+.background-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aeonium-img {
+  background-image: url("./img/aeonium-s.jpg");
+}
+
+#aloe-img {
+  background-image: url("./img/aloe-s.jpg");
+}
+
+#cactus-img {
+  background-image: url("./img/cactus-s.jpg");
+}
+
+#echeveria-img {
+  background-image: url("./img/echeveria-s.jpg");
+}
+
+#sedum-img {
+  background-image: url("./img/sedum-s.jpg");
+}
+
+#sempervivum-img {
+  background-image: url("./img/sempervivum-s.jpg");
+}
+
+#cookies-alert {
+  width: 60vw;
+  border: 5px solid black;
+  position: absolute;
+  bottom: 5px;
+  left: 20%;
+  z-index: 1;
+  background-color: white;
+  height: 150px;
+}
+
+#cookies-alert p {
+  display: inline-block;
+  font-size: 18pt;
+}
+
+#accept-cookies-btn {
+  box-shadow: 5px 5px black;
+  border: 3px solid black;
+  width: 200px;
+  height: 50px;
+  font-size: 22pt;
+  cursor: pointer;
+  color: white;
+  background-color: #00bcb3;
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Succulent Shop</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+      function checkShopingCart() {
+        alert("Your cart is empty");
+      }
+
+      function acceptCookies() {
+        const element = document.getElementById("cookies-alert");
+        element.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="flex">
+          <div id="logo">
+            <img src="./img/leaf.png" alt="Hoja" width="40">
+          </div>
+          <h3>EasyBay</h3>
+          <div style="flex-grow: 1;">
+            <input class="search-bar" placeholder="Search for anything">
+          </div>
+          <p>Sign in</p>
+          <div id="shoping-cart" onclick="checkShopingCart()">
+            <img src="./img/cart-dark.png" alt="Carrito" width="40">
+          </div>
+        </div>
+        <div class="flex">
+          <p>Aeonium</p>
+          <p>Andormischus</p>
+          <p>Agave</p>
+          <p>Aloe</p>
+          <p>Anacampseros</p>
+          <p>Aristaloe</p>
+          <p>More...</p>
+        </div>
+      </header>
+      <section>
+        <h1 class="text-center">Your Source for Serious Succulent Specialties</h1>
+        <div id="succulent-info">
+          <div id="panel1">
+            <div class="info text-center">
+              <p>Discover succ- ulent varieties one pot or rack at a time!</p>
+              <p class="arrow-text">Discover <img src="./img/arrow-light.png" alt="arrow" ></p>
+            </div>
+            <div id="succulents-img" class="background-img"></div>
+          </div>
+          <div id="panel2">
+            <div id="succulent-img" class="background-img"></div>
+            <div class="info">
+              <p class="arrow-text">Soothing aloe <img src="./img/arrow-light.png" alt="arrow" ></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="succulent-imgs" class="flex">
+        <div>
+          <div id="aeonium-img" class="circle-img background-img"></div>
+          <p class="text-center">Aeonium</p>
+        </div>
+        <div>
+          <div id="aloe-img" class="circle-img background-img"></div>
+          <p class="text-center">Aloe</p>
+        </div>
+        <div>
+          <div id="cactus-img" class="circle-img background-img"></div>
+          <p class="text-center">Cactus</p>
+        </div>
+        <div>
+          <div id="echeveria-img" class="circle-img background-img"></div>
+          <p class="text-center">Echeveria</p>
+        </div>
+        <div>
+          <div id="sedum-img" class="circle-img background-img"></div>
+          <p class="text-center">Sedum</p>
+        </div>
+        <div>
+          <div id="sempervivum-img" class="circle-img background-img"></div>
+          <p class="text-center">Sempervivum</p>
+        </div>
+      </section>
+    </div>
+    <section id="cookies-alert" class="flex">
+      <img src="./img/alert-dark.png" alt="Alert Sign" width="100">
+      <p>This site makes use of third-party cookies, by clicking "I accept" you aggree to the terms outlined in our <a href="#">cookie policy</a>.</p>
+      <button id="accept-cookies-btn" onclick="acceptCookies()">I accept</button>
+    </section>
+  </body>
+</html>
